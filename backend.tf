@@ -3,6 +3,8 @@ terraform {
     bucket = "mydev-tf-state-bucket"
     key = "main"
     region = "us-east-2"
+    # dynomoDB table lock
     dynamodb_table = "my-dynamodb-table"
+    encrypt = true
   }
 }
